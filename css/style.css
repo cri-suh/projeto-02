@@ -14,8 +14,6 @@ html,body{
 .logo{
     float:left;
     width:100%;
-    padding-left: 180px;
-    
 }
 .logo img{
     width:250px;
@@ -26,7 +24,7 @@ header{
     height: 90vh;
     padding:10px 2%;
     max-height: 700px;
-    background-image: url('../images/capa.jpg');
+    background-image: url('../images/capa2.jpg');
     background-size:cover;
     background-position: center;
 }
@@ -48,6 +46,10 @@ header li a {
     text-decoration: none;
     color: white;
     margin: 20px; 
+    transition: 0.3s;
+}
+header li a:hover{
+    border-bottom:2px solid #F5CC4A;
 }
 .clear{clear:both};
 
@@ -60,11 +62,46 @@ header li a {
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -5%);
     text-align: center;
-    text-shadow:0px 2px 4px rgba(0,0,0,0.9);
-    
-
+    text-shadow:3px 3px 2px rgba(0,0,0,0.9);
+}
+.chamada1 p{
+    text-align:center;
+    margin-top:28%;
+    color:#C1D4DB;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow:0px 3px 4px rgba(0,0,0,0.9);
+}
+section.sessao1{
+    width: 100%;
+    background-color: #213563;
+    padding:20px 2%;
+}
+.texto-sessao1{
+    float: left;
+    color: white;
+    width: 50%
+}
+.texto-sessao1 h2{
+    font-weight: 300;
+}
+.texto-sessao1 p{
+    font-size: 13px;
+    margin-top: 20px;
+}
+.texto-sessao1 ul{
+    list-style-position: inside;
+    font-size:13px;
+}
+.texto-sessao1 ul li{
+    float: left;
+    width: 100%;
+}
+.device-sessao1{
+    float: left;
+    width: 50%;
 }
 @media screen and (max-width:510px){
     .logo{
@@ -80,8 +117,7 @@ header li a {
     }
     header nav{
         float:none;
-        text-align: center;
-         
+        text-align: center;  
     }
     nav ul{
         margin:0;
@@ -94,15 +130,15 @@ header li a {
         font-size: 18px;
         margin:0 23px;
         text-shadow:0px 2px 4px rgba(0,0,0,0.9);
-        transition: 0.5s;
+        
     }
-    header li a:hover{
-        background-color:#1A202B;
-        padding:8px;
-        border-radius:8px;
-    }
+  
     .chamada1 h2{
-        width: 80%;
-        margin-top:100px;
+        width: 100%;
+        margin-top:-70px;
+    }
+    .chamada1 p{
+        width:80%;
+        margin:240px auto;
     }
 }
